@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website - Easy Turtorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/134ab387eb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/Free_Sample_By_Wix.jpg" class="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Rohith</span> <br>From India </h1>
+            </div>
+        </div>
+    </div>
+
+    <!--about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/img/WhatsApp Image 2022-11-11 at 7.19.19 PM.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Junior Software developer able to build a Web presence from the ground up - from concept,
+                        navigation, layout and programming to backend. Skilled at writing well-designed, testable and
+                        efficient code using current best practices in Web development. Fast learner, hard worker and
+                        team player who is proficient in an array of scripting languages and multimedia Web tools</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Project')">Project</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front End Developer</span><br>Designing the Web page And The Back End Operation
+                                Interfaces</li>
+                            <li><span>Web Developer</span><br>Web Development</li>
+                            <li><span>App Developer</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Project">
+                        <ul>
+                            <li><span>Road Sign Detection by using Deep learning</span><br>To overcome from the road
+                                Accidents</li>
+                            <li><span>Fire Fighting Robot</span><br>To overcome from the fires in the appartment</li>
+                            <li><span>Face Mask Detector</span><br>This is an real time face Detector that can detect
+                                the face and give an percentage of the person face coverd by the mask</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2016</span><br>Sreenivasa Institute of Technology and Management Studies</li>
+                            <li><span>2018</span><br>sri vivekananda junior college Chittor</li>
+                            <li><span>2022</span><br>Camford English Medium High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Full Stack Developer</h2>
+                    <p>A full stack web developer is a person who can develop both client and server software.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Web Developer</h2>
+                    <p>Web developers create and maintain websites.It is a friendly user srvice.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-database"></i>
+                    <h2>Back End Developer</h2>
+                    <p>Back-end developers are the experts who build and maintain the mechanisms that process data and
+                        perform actions on websites</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------portifolio--------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/img/work1.jpg">
+                    <div class="layer">
+                        <h3>Road Sign detection and classification using deep learning</h3>
+                        <p> A Road Sign Detection and Classification System provide comprehensive assistance to the
+                            driver to entrust the traffic signs by developing a system that will automatically detect
+                            and recognize traffic signs thus providing information to the driving systems</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/img/work2.jpg">
+                    <div class="layer">
+                    <h3>Fire Fighting Robot</h3>
+                    <p>A Fire Fighting Robot is simply a UGV(Unmanned Ground Vehicle). The robot will be controlled by
+                        an operator using a wireless remote, both mobility & water monitor functions. The operator will
+                        have visual feedback from on-board HD Cameras.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/img/Work 3.png">
+                <div class="layer">
+                <h3>Face Mask Detector</h3>
+                <p>This is an real time face Detector that can detect the face and give an percentage of the person
+                    face coverd by the mask. This is achieved by the help of python API's like Keras, R-CNN, Mobilnet,
+                    OpenCV</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <!-- <a href="#" clas="btn">See More</a> -->
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+    <!------------------contact---------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i></i>rohithreddy3920@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i>6305520559</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/_rohith_3920?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rohith-reddy-19a021221"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></i></a>
+                    </div>
+                    <a href="/img/Rohith's Resume 2.docx" download class="btn btn2">Download cv</a>
+                </div>
+                <div class="contatc-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name " required>
+                            <input type="text" name="Email" placeholder="Your email" required>
+                            <textarea name="Message" rows="6" placeholder="message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ Rohith. Made with <i class="fa-solid fa-heart"></i> my passion.</p>
+        </div>
+    </div>
+    <script src="javascript.js">
+
+    </script>
+</body>
+
+</html>
